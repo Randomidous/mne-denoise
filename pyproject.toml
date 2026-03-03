@@ -143,6 +143,10 @@ docstring-code-format = true
 minversion = "7.0"
 addopts = "-ra --strict-markers --strict-config"
 testpaths = ["tests"]
+markers = [
+  "synthetic: edge-case tests that run on synthetic data (no real files required)",
+  "real_data: validation tests that require real MoBI data files",
+]
 filterwarnings = [
   "ignore::DeprecationWarning",
   "ignore::PendingDeprecationWarning",
